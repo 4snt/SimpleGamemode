@@ -1,0 +1,12 @@
+name: SimpleGamemode
+version: 1.0
+main: dev.fndit.simplegamemode.SimpleGamemodePlugin
+api-version: 1.20
+commands:
+  gm:
+    description: Gamemode selector
+    usage: /gm <0|1|2|3>
+    permission: simplegamemode.use
+permissions:
+  simplegamemode.use:
+    default: true
