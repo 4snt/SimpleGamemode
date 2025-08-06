@@ -1,0 +1,32 @@
+# Java + Maven + VSCode .gitignore
+
+# Maven build output
+target/
+!release/*.jar
+*.jar
+# IDEs and editors
+.idea/
+*.iml
+*.iws
+.vscode/
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Build artifacts
+*.jar
+*.war
+*.ear
+
+# Other
+*.class
