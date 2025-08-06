@@ -17,8 +17,9 @@ A lightweight and configurable Spigot plugin that allows players to change their
 
 ## Screenshot
 
-![SimpleGamemode in action](./assets/simplegamemode-demo.png) <!-- Optional image -->
-
+![SimpleGamemode in action](./assets/1.png) <!-- Optional image -->
+![SimpleGamemode in action](./assets/2.png) <!-- Optional image -->
+![SimpleGamemode in action](./assets/2pr.png) <!-- Optional image -->
 ## ⚙️ Configuration
 
 ```yaml
