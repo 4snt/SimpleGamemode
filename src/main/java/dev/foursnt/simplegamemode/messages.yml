@@ -1,0 +1,20 @@
+# Language setting: 'en' for English, 'pt' for Portuguese
+# Configuração de idioma: 'en' para Inglês, 'pt' para Português
+language: en
+
+messages:
+  en:
+    only-players: "Only players can use this command."
+    no-permission: "§cYou do not have permission to use this command."
+    usage: "§cCorrect usage: /gm <0|1|2|3>"
+    invalid-mode: "§cInvalid game mode."
+    blocked-mode: "§cThis game mode is blocked."
+    changed-mode: "§aGame mode changed to §e%mode%§a."
+
+  pt:
+    only-players: "Somente jogadores podem usar esse comando."
+    no-permission: "§cVocê não tem permissão para usar esse comando."
+    usage: "§cUso correto: /gm <0|1|2|3>"
+    invalid-mode: "§cModo inválido."
+    blocked-mode: "§cEsse modo de jogo está bloqueado."
+    changed-mode: "§aModo de jogo alterado para §e%mode%§a."
