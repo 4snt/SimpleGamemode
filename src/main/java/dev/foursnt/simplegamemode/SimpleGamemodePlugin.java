@@ -18,8 +18,21 @@ public class SimpleGamemodePlugin extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        // Garante que a pasta do plugin existe
+        if (!getDataFolder().exists()) {
+            getDataFolder().mkdirs();
+        }
+
+        // Salva o config.yml se não existir
         saveDefaultConfig();
 
+        // Salva o messages.yml se não existir
+        File messagesFile = new File(getDataFolder(), "messages.yml");
+        if (!messagesFile.exists()) {
+            saveResource("messages.yml", false);
+        }
+
+        // Carrega configurações
         blockedGamemodes = getConfig().getStringList("blocked-gamemodes");
         loadMessages();
 
@@ -28,10 +41,6 @@ public class SimpleGamemodePlugin extends JavaPlugin {
 
     private void loadMessages() {
         File file = new File(getDataFolder(), "messages.yml");
-        if (!file.exists()) {
-            saveResource("messages.yml", false);
-        }
-
         YamlConfiguration yaml = YamlConfiguration.loadConfiguration(file);
         String lang = yaml.getString("language", "en");
         messages = yaml.getConfigurationSection("messages." + lang);
